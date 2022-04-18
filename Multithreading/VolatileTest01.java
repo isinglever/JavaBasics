@@ -1,8 +1,6 @@
-import java.io.InterruptedIOException;
-
-public class VolatileTest {
-    int a = 1;
-    int b = 2;
+public class VolatileTest01 {
+     int a = 1;
+     int b = 2;
     
     public void change() {
         a = 3;
@@ -17,7 +15,7 @@ public class VolatileTest {
 
     public static void main(String[] args) {
         while (true) {
-            final VolatileTest test = new VolatileTest();
+            final VolatileTest01 test = new VolatileTest01();
             
             new Thread(new Runnable() {
                 @Override
@@ -45,3 +43,8 @@ public class VolatileTest {
         }
     }
 }
+
+/*
+* output exist
+* b = 3; a = 1;
+* */
