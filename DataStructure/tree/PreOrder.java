@@ -1,6 +1,6 @@
-package Tree;
+package tree;
 
-import Basics.TreeNode;
+import basics.TreeNode;
 
 import java.util.ArrayList;
 
@@ -22,7 +22,7 @@ public class PreOrder {
         TreeNode test = new TreeNode(1,node3, node2);
         PreOrder preOrder = new PreOrder();
         ArrayList<Integer> res = new ArrayList<>();
-        preOrder.preOrderUtil(test,res);
+        preOrder.preOrderUtil(test, res);
 //        for (Object num : res.toArray()) 
         System.out.println(res.toString());
     }

@@ -1,6 +1,6 @@
-package Tree;
+package tree;
 
-import Basics.TreeNode;
+import basics.TreeNode;
 
 import java.util.ArrayList;
 
